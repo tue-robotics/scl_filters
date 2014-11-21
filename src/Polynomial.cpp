@@ -181,7 +181,7 @@ double Polynomial::getTerm (short term) const
 
 double Polynomial::evaluate (double x) const
 {
-	double answer;
+	double answer = 0.0;
 	double xx = 1;
 	
 	for (int i=0;i<mnTerms;i++) {
