@@ -185,10 +185,9 @@ double Polynomial::evaluate (double x) const
 	double xx = 1;
 	
 	for (int i=0;i<mnTerms;i++) {
-		for (int j=0;j<i;j++) {
-			xx = xx * x;
-		}
+		
 		answer += mpCoefficients[i]*xx;
+		xx = xx*x;
 	}
 		
 	return answer;
