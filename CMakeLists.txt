@@ -9,6 +9,10 @@ catkin_package(
 
 include_directories(include)
 
+# ------------------------------------------------------------------------------------------------
+#                                            LIBRARY
+# ------------------------------------------------------------------------------------------------
+
 add_library(scl_filters
     include/scl/polynomial/Polynomial.hpp
     include/scl/filters/Filter.hpp
@@ -30,3 +34,10 @@ add_library(scl_filters
     src/DSkewedNotch.cpp
     src/Polynomial.cpp
 )
+
+# ------------------------------------------------------------------------------------------------
+#                                             TEST
+# ------------------------------------------------------------------------------------------------
+
+add_executable(test_filters test/test_filters.cpp)
+target_link_libraries(test_filters scl_filters)
