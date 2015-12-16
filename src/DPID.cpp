@@ -233,36 +233,6 @@ bool DPID::finalize()
     return true;
 }
 
-double* DPID::getNumerator () 
-{
-    return numerator;
-}
-
-double* DPID::getDenominator ()
-{
-    return denominator;
-}
-
-double* DPID::getPreviousInputs ()
-{
-    return previous_inputs;
-}
-
-double* DPID::getPreviousOutputs ()
-{
-    return previous_outputs;
-}
-
-double DPID::getOutput ()
-{
-    return output;
-}
-
-double DPID::getOutputAntiwindup ()
-{
-    return output_antiwindup;
-}
-
 bool DPID::setEpsilon (double epsilon)
 {
     // Ensure nonzero value for eps

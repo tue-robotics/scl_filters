@@ -225,31 +225,6 @@ bool DWeakIntegrator::finalize()
     return true;
 }
 
-double* DWeakIntegrator::getNumerator () 
-{
-    return numerator;
-}
-
-double* DWeakIntegrator::getDenominator ()
-{
-    return denominator;
-}
-
-double* DWeakIntegrator::getPreviousInputs ()
-{
-    return previous_inputs;
-}
-
-double* DWeakIntegrator::getPreviousOutputs ()
-{
-    return previous_outputs;
-}
-
-double DWeakIntegrator::getOutput ()
-{
-    return output;
-}
-
 bool DWeakIntegrator::setEpsilon (double epsilon)
 {
     // Ensure nonzero value for eps

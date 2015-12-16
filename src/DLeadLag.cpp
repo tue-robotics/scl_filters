@@ -224,31 +224,6 @@ bool DLeadLag::finalize()
     return true;
 }
 
-double* DLeadLag::getNumerator () 
-{
-    return numerator;
-}
-
-double* DLeadLag::getDenominator ()
-{
-    return denominator;
-}
-
-double* DLeadLag::getPreviousInputs ()
-{
-    return previous_inputs;
-}
-
-double* DLeadLag::getPreviousOutputs ()
-{
-    return previous_outputs;
-}
-
-double DLeadLag::getOutput ()
-{
-    return output;
-}
-
 bool DLeadLag::setEpsilon (double epsilon)
 {
     // Ensure nonzero value for eps

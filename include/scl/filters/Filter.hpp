@@ -55,7 +55,7 @@ public:
 
     virtual bool finalize() = 0;
 
-    virtual double getOutput() = 0;
+    virtual double getOutput() const = 0;
 
 //    virtual void reset() = 0;
 

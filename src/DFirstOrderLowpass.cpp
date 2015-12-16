@@ -225,31 +225,6 @@ bool DFirstOrderLowpass::finalize()
     return true;
 }
 
-double* DFirstOrderLowpass::getNumerator () 
-{
-    return numerator;
-}
-
-double* DFirstOrderLowpass::getDenominator ()
-{
-    return denominator;
-}
-
-double* DFirstOrderLowpass::getPreviousInputs ()
-{
-    return previous_inputs;
-}
-
-double* DFirstOrderLowpass::getPreviousOutputs ()
-{
-    return previous_outputs;
-}
-
-double DFirstOrderLowpass::getOutput ()
-{
-    return output;
-}
-
 bool DFirstOrderLowpass::setEpsilon (double epsilon)
 {
     // Ensure nonzero value for eps

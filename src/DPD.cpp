@@ -223,31 +223,6 @@ bool DPD::finalize()
     return true;
 }
 
-double* DPD::getNumerator () 
-{
-    return numerator;
-}
-
-double* DPD::getDenominator ()
-{
-    return denominator;
-}
-
-double* DPD::getPreviousInputs ()
-{
-    return previous_inputs;
-}
-
-double* DPD::getPreviousOutputs ()
-{
-    return previous_outputs;
-}
-
-double DPD::getOutput ()
-{
-    return output;
-}
-
 bool DPD::setEpsilon (double epsilon)
 {
     // Ensure nonzero value for eps

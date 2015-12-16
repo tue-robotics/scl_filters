@@ -230,31 +230,6 @@ bool DSecondOrderLowpass::finalize()
     return true;
 }
 
-double* DSecondOrderLowpass::getNumerator () 
-{
-    return numerator;
-}
-
-double* DSecondOrderLowpass::getDenominator ()
-{
-    return denominator;
-}
-
-double* DSecondOrderLowpass::getPreviousInputs ()
-{
-    return previous_inputs;
-}
-
-double* DSecondOrderLowpass::getPreviousOutputs ()
-{
-    return previous_outputs;
-}
-
-double DSecondOrderLowpass::getOutput ()
-{
-    return output;
-}
-
 bool DSecondOrderLowpass::setEpsilon (double epsilon)
 {
     // Ensure nonzero value for eps

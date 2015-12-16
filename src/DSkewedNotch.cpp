@@ -217,31 +217,6 @@ bool DSkewedNotch::finalize()
     return true;
 }
 
-double* DSkewedNotch::getNumerator () 
-{
-    return numerator;
-}
-
-double* DSkewedNotch::getDenominator ()
-{
-    return denominator;
-}
-
-double* DSkewedNotch::getPreviousInputs ()
-{
-    return previous_inputs;
-}
-
-double* DSkewedNotch::getPreviousOutputs ()
-{
-    return previous_outputs;
-}
-
-double DSkewedNotch::getOutput ()
-{
-    return output;
-}
-
 bool DSkewedNotch::setEpsilon (double epsilon)
 {
     // Ensure nonzero value for eps

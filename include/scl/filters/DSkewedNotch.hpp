@@ -213,27 +213,27 @@ public:
     /// Get numerator of the filter
     /** @return numerator of the filter as an array pointer
             */
-    double* getNumerator ();
+    const double* getNumerator() const { return numerator; }
 
     /// Get denominator of the filter
     /** @return denominator of the filter as an array pointer
             */
-    double* getDenominator ();
+    const double* getDenominator() const { return denominator; }
 
     /// Get previous inputs of the filter
     /** @return previous inputs of the filter as an array pointer
             */
-    double* getPreviousInputs ();
+    const double* getPreviousInputs() const { return previous_inputs; }
 
     /// Get previous outputs of the filter
     /** @return previous outputs of the filter as an array pointer
             */
-    double* getPreviousOutputs ();
+    const double* getPreviousOutputs() const { return previous_outputs; }
 
     /// Get current output of the filter
     /** @return current output of the filter
             */
-    double getOutput ();
+    double getOutput() const { return output; }
 
     /// Set the epsilon, value used to denote a number very close to zero (or some other specific value) within the bounds of double accuracy
     bool setEpsilon(double epsilon);
