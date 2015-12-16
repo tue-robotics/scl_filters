@@ -49,6 +49,7 @@
 #define DPD_HPP
 
 #include <math.h>
+#include "scl/filters/Filter.hpp"
 #include "scl/filters/DiscretizationMethods.hpp"
 #include "scl/polynomial/Polynomial.hpp"
 
@@ -132,7 +133,7 @@ namespace DFILTERS {
  */
 
 
-class DPD
+class DPD : public Filter
 {
 public:
 

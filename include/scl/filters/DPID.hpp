@@ -49,6 +49,7 @@
 #define DPID_HPP
 
 #include <math.h>
+#include "scl/filters/Filter.hpp"
 #include "scl/filters/DiscretizationMethods.hpp"
 #include "scl/polynomial/Polynomial.hpp"
 
@@ -139,7 +140,7 @@ namespace DFILTERS {
  */
 
 
-class DPID
+class DPID : public Filter
 {
 public:
 

@@ -11,6 +11,7 @@ include_directories(include)
 
 add_library(scl_filters
     include/scl/polynomial/Polynomial.hpp
+    include/scl/filters/Filter.hpp
     include/scl/filters/DSecondOrderLowpass.hpp
     include/scl/filters/DPID.hpp
     include/scl/filters/DPD.hpp

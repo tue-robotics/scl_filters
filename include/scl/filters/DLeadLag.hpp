@@ -49,6 +49,7 @@
 #define DLEADLAG_HPP
 
 #include <math.h>
+#include "scl/filters/Filter.hpp"
 #include "scl/filters/DiscretizationMethods.hpp"
 #include "scl/polynomial/Polynomial.hpp"
 
@@ -128,7 +129,7 @@ namespace DFILTERS {
  */
 
 
-class DLeadLag
+class DLeadLag : public Filter
 {
 public:
 

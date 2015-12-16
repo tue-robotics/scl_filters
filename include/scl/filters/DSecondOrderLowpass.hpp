@@ -50,6 +50,7 @@
 #define DSECONDORDERLOWPASS_HPP
 
 #include <math.h>
+#include "scl/filters/Filter.hpp"
 #include "scl/filters/DiscretizationMethods.hpp"
 #include "scl/polynomial/Polynomial.hpp"
 
@@ -130,7 +131,7 @@ namespace DFILTERS {
  */
 
 
-class DSecondOrderLowpass
+class DSecondOrderLowpass : public Filter
 {
 public:
 
