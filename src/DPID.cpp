@@ -113,10 +113,6 @@ bool DPID::configure(double kp, double kv, double ki, double _Ts, int method, do
 
 	double N = 100.0;
 	double alpha, wp;
-	double zp1=1.0;
-	double zp2=exp(-N*Ts);
-	double zz1=exp(Ts*(-kp*N-ki+sqrt(pow(kp*N+ki,2)-4*ki*(kp+kv*N)))/(2*(kp+kv*N)));
-	double zz2=exp(Ts*(-kp*N-ki-sqrt(pow(kp*N+ki,2)-4*ki*(kp+kv*N)))/(2*(kp+kv*N)));
 
 	double bD[filter_order+1], aD[filter_order+1];
 	
