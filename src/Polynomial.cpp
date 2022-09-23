@@ -9,6 +9,8 @@
  
 #include "scl/polynomial/Polynomial.hpp"
 
+#include <stdexcept>
+
 //constructor
 Polynomial::Polynomial() :mnTerms(3)
 {
@@ -177,6 +179,8 @@ double Polynomial::getTerm (short term) const
 {
 	if (term < mnTerms && term >= 0)
 		return mpCoefficients[term];
+	
+	throw std::out_of_range("Term outside range[0-%d]", mnTerms);
 }
 
 double Polynomial::evaluate (double x) const
