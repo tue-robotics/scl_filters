@@ -180,7 +180,7 @@ double Polynomial::getTerm (short term) const
 	if (term < mnTerms && term >= 0)
 		return mpCoefficients[term];
 	
-	throw std::out_of_range("Term outside range[0-%d]", mnTerms);
+	throw std::out_of_range("Term outside range");
 }
 
 double Polynomial::evaluate (double x) const
